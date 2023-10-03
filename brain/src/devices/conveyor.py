@@ -20,12 +20,15 @@ class ConveyorBelt(Arduino):
             return False
         
         action = ActionState.RUN.value if run else ActionState.STOP.value
+
         expected_response = f"the conveyor belt is now {'running' if run else 'stopped'}"
+
         action_done = self.do_action(action, expected_response)
         if not action_done:
             print(f"error while trying to {'run' if run else 'stop'} the conveyor belt")
             return False
 
         self.is_running = run
+
         return True
  

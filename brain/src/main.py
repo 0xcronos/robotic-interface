@@ -13,10 +13,6 @@ def main():
     cb = ConveyorBelt(conveyor_serial)
     while True:
         cb.toggle(run=True)
-        time.sleep(1)
-        cb.toggle(run=False)
-        time.sleep(1)
-
 
 if __name__ == "__main__":
     main()

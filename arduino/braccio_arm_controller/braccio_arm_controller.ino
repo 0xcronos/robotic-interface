@@ -1,38 +1,42 @@
-#include <AccelStepper.h>
+#include <BraccioRobot.h>
+#include <Servo.h>
 
-// Definitions for the ULN2003 driver
-#define MotorInterfaceType 4
-#define IN1 8
-#define IN2 9
-#define IN3 10
-#define IN4 11
+Position armPosition;
 
-AccelStepper stepper(MotorInterfaceType, 8, 10, 9, 11);
+void setup()
+{
+    Serial.begin(9600);
 
-void setup() {
-  Serial.begin(9600);
-  while (!Serial) { ; }
-
-  stepper.setMaxSpeed(550);
+    while (!Serial) { ; }
+    BraccioRobot.init();
 }
 
-void loop() {
-  if (Serial.available() > 0) {
-    char command = Serial.read();
-    switch (command) {
-      case 'r':
-        stepper.setSpeed(550);
-        Serial.println("the conveyor belt is now running");
-        break;
-      case 's':
-        stepper.setSpeed(0);
-        Serial.println("the conveyor belt is now stopped");
-        break;
-      default:
-        Serial.println("Invalid command.");
-        Serial.println(command);
-        break;
+// base degrees           : from 0 to 180 degrees
+// shoulder degrees       : from 15 to 165 degrees
+// elbow degrees          : from 0 to 180 degrees
+// wrist degrees          : from 0 to 180 degrees
+// wrist rotation degrees : from 0 to 180 degrees
+// gripper degrees        : from 10 to 73 degrees (10 open, 73 closed)
+void loop()
+{
+    if (Serial.available())
+    {
+        String command = Serial.readStringUntil('\n');
+
+        command.trim();
+
+        if (command.startsWith("angles:"))
+        {
+            Serial.println(command);
+            String angles = command.substring(command.indexOf(":") + 1, (command.length()));
+            int speed = 150;
+            armPosition.setFromString(angles);
+
+            BraccioRobot.moveToPosition(armPosition, speed);
+        }
+        else
+        {
+            Serial.println("Invalid syntax for specified command.");
+        }
     }
-  }
-  stepper.runSpeed();
 }
