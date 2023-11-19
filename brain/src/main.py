@@ -5,14 +5,16 @@ from devices.conveyor import ConveyorBelt
 
 
 def main():
-    conveyor_serial = serial.Serial("COM3", 9600)
+    conveyor_serial = serial.Serial("/dev/cu.usbserial-10", 9600)
 
     print("Initializing robotic interface...\n")
     time.sleep(3)
     
     cb = ConveyorBelt(conveyor_serial)
+    cb.toggle(run=False)
+    
     while True:
         cb.toggle(run=True)
-
-if __name__ == "__main__":
-    main()
+        time.sleep(1)
+        cb.toggle(run=False)
+        time.sleep(1)

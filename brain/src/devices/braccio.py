@@ -1,8 +1,11 @@
 from serial import Serial
 
-from devices.arduino import Arduino
+from brain.src.devices.device import Device
 
 
-class BraccioArm(Arduino):
+class BraccioArm(Device):
     def __init__(self, serial_port: Serial) -> None:
         super(BraccioArm, self).__init__(serial_port)
+    
+    def move(angles: list) -> None:
+        pass
