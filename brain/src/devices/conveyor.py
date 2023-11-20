@@ -1,7 +1,7 @@
 from enum import Enum
 from serial import Serial
 
-from brain.src.devices.device import Device 
+from devices.device import Device 
 
 
 class ActionState(Enum):
