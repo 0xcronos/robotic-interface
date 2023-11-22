@@ -7,13 +7,14 @@
 #define IN3 10
 #define IN4 11
 
+
 AccelStepper stepper(MotorInterfaceType, 8, 10, 9, 11);
 
 void setup() {
   Serial.begin(9600);
   while (!Serial) { ; }
 
-  stepper.setMaxSpeed(550);
+  stepper.setMaxSpeed(450);
 }
 
 void loop() {
@@ -21,7 +22,7 @@ void loop() {
     char command = Serial.read();
     switch (command) {
       case 'r':
-        stepper.setSpeed(550);
+        stepper.setSpeed(450);
         Serial.println("the conveyor belt is now running");
         break;
       case 's':
