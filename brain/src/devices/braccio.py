@@ -12,6 +12,7 @@ class BraccioArm(Device):
         super(BraccioArm, self).__init__(serial_port, baudrate)
         self.is_picking_up = False
     
+    # Returns True if the device is picking up otherwise False
     def pickUp(self) -> bool:
         if not self.is_picking_up:
             print("Picking up object...")
