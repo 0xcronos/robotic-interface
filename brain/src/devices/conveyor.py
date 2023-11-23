@@ -1,5 +1,4 @@
 from enum import Enum
-from serial import Serial
 
 from devices.device import Device 
 
@@ -10,7 +9,7 @@ class ActionState(Enum):
 
 
 class ConveyorBelt(Device):
-    def __init__(self, serial_port: Serial, baudrate: int) -> None:
+    def __init__(self, serial_port: str, baudrate: int) -> None:
         super(ConveyorBelt, self).__init__(serial_port, baudrate)
         self.is_running = False
     

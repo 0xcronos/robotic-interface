@@ -1,5 +1,4 @@
 from enum import Enum
-from serial import Serial
 
 from devices.device import Device
 
