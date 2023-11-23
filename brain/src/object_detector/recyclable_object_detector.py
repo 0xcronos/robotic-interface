@@ -14,5 +14,5 @@ class RecyclableObjectDetector:
                 probs = result.boxes.conf
                 if probs.nelement() == 1 and probs.item() >= 0.6:
                     self.is_cardboard = "isCARBOARD"
-                    # print("Prob:", probs.item())
+                    print("Prob:", probs.item())
                     time.sleep(5)
