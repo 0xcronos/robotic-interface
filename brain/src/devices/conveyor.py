@@ -10,8 +10,8 @@ class ActionState(Enum):
 
 
 class ConveyorBelt(Device):
-    def __init__(self, serial_port: Serial) -> None:
-        super(ConveyorBelt, self).__init__(serial_port)
+    def __init__(self, serial_port: Serial, baudrate: int) -> None:
+        super(ConveyorBelt, self).__init__(serial_port, baudrate)
         self.is_running = False
     
     def toggle(self, run: bool) -> bool:
@@ -22,6 +22,6 @@ class ConveyorBelt(Device):
 
         self.write(action)
         self.is_running = run
-
+        
         return True
  
