@@ -14,7 +14,7 @@ void setup() {
   Serial.begin(9600);
   while (!Serial) { ; }
 
-  stepper.setMaxSpeed(450);
+  stepper.setMaxSpeed(550);
 }
 
 void loop() {

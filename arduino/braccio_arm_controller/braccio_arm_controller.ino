@@ -4,15 +4,7 @@
 #define GRIPPER_OPEN 0
 
 Position initialPosition(174, 120, 40, 100, 90, GRIPPER_CLOSED);
-
-
 Position pos;
-
-void setup() {
-  Serial.begin(9600);
-  while (!Serial) { ; }
-  BraccioRobot.init(initialPosition);
-}
 
 void moveArm(int* angles) {
   pos.set(angles[0], angles[1], angles[2], angles[3], angles[4], angles[5]);
@@ -35,6 +27,12 @@ void pickUp() {
   for (int i = 0; i < sequence_length; i++) {
     moveArm(sequence[i]);
   }
+}
+
+void setup() {
+  Serial.begin(9600);
+  while (!Serial) { ; }
+  BraccioRobot.init(initialPosition);
 }
 
 void loop() {
