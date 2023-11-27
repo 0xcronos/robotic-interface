@@ -12,19 +12,18 @@ class BraccioArm(Device):
         super(BraccioArm, self).__init__(serial_port, baudrate)
         self.is_picking_up = False
     
-    # Returns True if the device is picking up otherwise False
+    # Returns False if task done otherwise returns True
     def pickUp(self) -> bool:
         if not self.is_picking_up:
             print("Picking up object...")
             self.is_picking_up = True
-        
-        self.write(ActionState.PICKUP.value)
-        
+            self.write(ActionState.PICKUP.value)
+
         response = self.read()
         
         if response == "done pickup":
             self.is_picking_up = False
             print("Picking up object...: Done")
-            return False
+            return True
         
-        return True
+        return False

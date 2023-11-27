@@ -1,0 +1,15 @@
+conveyor_belt:
+  serial_port: /dev/cu.usbserial-140
+  baudrate: 9600
+braccio_arm:
+  serial_port: /dev/cu.usbserial-1120
+  baudrate: 9600
+proximity_sensor:
+  serial_port: /dev/cu.usbserial-1130
+  baudrate: 115200
+object_detector:
+  weights_path: object_detector/best.pt
+  source: 0
+  device: cpu
+  stream: true
+  verbose: false
