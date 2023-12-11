@@ -9,7 +9,7 @@ proximity_sensor:
   baudrate: 115200
 object_detector:
   weights_path: object_detector/best.pt
-  source: 0
+  source: tcp://127.0.0.1:8888
   device: cpu
   stream: true
-  verbose: false
+  verbose: true
