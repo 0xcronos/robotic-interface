@@ -3,7 +3,6 @@ from ultralytics import YOLO
 
 class RecyclableObjectDetector:
     def __init__(self, config: dict):
-        print(config)
         self.model = YOLO(config['weights_path'])
 
         del config['weights_path']
