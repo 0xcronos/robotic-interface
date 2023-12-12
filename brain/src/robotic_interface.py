@@ -3,10 +3,12 @@ from object_detector.recyclable_object_detector import RecyclableObjectDetector
 
 
 class RoboticInterface:
-    def __init__(self, conveyor_belt: Device, braccio_arm: Device,
+    def __init__(self, 
+        conveyor_belt: Device, 
+        braccio_arm: Device,
         proximity_sensor: Device,
         object_detector: RecyclableObjectDetector
-    ):
+    ) -> None:
         self.conveyor_belt = conveyor_belt
         self.braccio_arm = braccio_arm
         self.proximity_sensor = proximity_sensor
@@ -24,7 +26,7 @@ class RoboticInterface:
 
         while True:
             if self._is_available_for_pickup():
-                is_pickup_done = self.braccio_arm.pickUp()
+                is_pickup_done = self.braccio_arm.pick_up()
                 
                 if is_pickup_done == True:
                     self.object_detector.is_cardboard = False

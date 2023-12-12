@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 
 class RecyclableObjectDetector:
-    def __init__(self, config: dict):
+    def __init__(self, config: dict) -> None:
         self.model = YOLO(config['weights_path'])
 
         del config['weights_path']
@@ -10,7 +10,7 @@ class RecyclableObjectDetector:
 
         self.is_cardboard = False
 
-    def execute(self):
+    def execute(self) -> None:
         results = self.model(**self.config)
         
         while True:
