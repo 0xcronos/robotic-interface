@@ -60,13 +60,13 @@ residuos y la conservación del medio ambiente.
 4. Paso 3: Iniciar el programa.
     ```bash
     # Opción 1: Iniciar desde `runner.sh`.
-        Utilizar esta opción si source = tcp://127.0.0.1:8888.
+    # Utilizar esta opción si source = tcp://127.0.0.1:8888.
 
     cd robotic-interface/brain/src/
     ./runner.sh
     
     # Opción 2: Inicio manual
-        Utilizar esta opción si source = 0 (config para cámaras USB)
+    # Utilizar esta opción si source = 0 (config para cámaras USB)
         cd robotic-interface/brain/
         source venv/bin/activate
         cd src/
