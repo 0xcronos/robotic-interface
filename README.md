@@ -67,10 +67,11 @@ residuos y la conservación del medio ambiente.
     
     # Opción 2: Inicio manual
     # Utilizar esta opción si source = 0 (config para cámaras USB)
-        cd robotic-interface/brain/
-        source venv/bin/activate
-        cd src/
-        python3 main.py
+
+    cd robotic-interface/brain/
+    source venv/bin/activate
+    cd src/
+    python3 main.py
     ```
 
 ## Arquitectura Física
