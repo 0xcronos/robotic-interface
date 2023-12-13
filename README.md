@@ -80,18 +80,18 @@ en el cual se ejecuta este programa. El Raspberry pi es el encargado de controla
 funcionamiento del brazo robótico, el detector de objetos, la banda transportadora y el sensor de proximidad.
 
 <div align="center">
-  <img src="https://i.ibb.co/0qhVxth/Arquitectura-general.png" alt="Diagrama de Componentes" width="70%" height="70%">
+  <img src="https://i.ibb.co/0qhVxth/Arquitectura-general.png" alt="Diagrama de Componentes" width="80%" height="80%">
 </div>
 
 
 ## Diagrama de Flujo General
 
 <div align="center">
-  <img src="https://i.ibb.co/2yFRsQz/diagrama-flujo.png" alt="Diagrama de Componentes" width="70%" height="7 0%">
+  <img src="https://i.ibb.co/2yFRsQz/diagrama-flujo.png" alt="Diagrama de Componentes" width="80%" height="80%">
 </div>
 
 ## Diagrama de Clases UML
 
 <div align="center">
-  <img src="https://i.ibb.co/42nkDrb/UML-robotic-interface.png" alt="Diagrama de Componentes" width="70%" height="70%">
+  <img src="https://i.ibb.co/42nkDrb/UML-robotic-interface.png" alt="Diagrama de Componentes" width="80%" height="80%">
 </div>
