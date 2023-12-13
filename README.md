@@ -3,7 +3,9 @@
 El proyecto tiene como propósito el desarrollo de un sistema automatizado 
 para la clasificación y detección de materiales reciclables como cartón, papel o plástico.
 
-![Interfaz Robótica](https://i.ibb.co/GP84JZz/20231213-000343.webp)
+<div align="center">
+  <img src="https://i.ibb.co/GP84JZz/20231213-000343.webp" alt="Diagrama de Componentes" width="400" height="200">
+</div>
 
 ## Configuración Inicial
 
