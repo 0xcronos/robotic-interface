@@ -13,7 +13,7 @@ class BraccioArm(Device):
         self.is_picking_up = False
     
     # Returns False if task done otherwise returns True
-    def pickUp(self) -> bool:
+    def pick_up(self) -> bool:
         if not self.is_picking_up:
             print("Picking up object...")
             self.is_picking_up = True

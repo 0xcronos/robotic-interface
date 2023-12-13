@@ -1,5 +1,5 @@
-ultralytics==8.0.131
-numpy==1.25.1
-datasets==2.13.1
+ultralytics
+numpy
+datasets
 pyserial
 envyaml

@@ -1,3 +1,4 @@
+import time
 import threading
 
 from envyaml import EnvYAML
@@ -17,9 +18,11 @@ class RecyclingSystem:
         self._initialize_threads()
     
     def run(self) -> None:
+        self.object_detector_thread.start()
+        time.sleep(10)
+
         self.recycling_thread.start()
         self.proximity_sensor_thread.start()
-        self.object_detector_thread.start()
 
     def _set_robotic_interface(self, config: EnvYAML) -> RoboticInterface:
         conveyor_belt = ConveyorBelt(config['conveyor_belt.serial_port'], config['conveyor_belt.baudrate'])
