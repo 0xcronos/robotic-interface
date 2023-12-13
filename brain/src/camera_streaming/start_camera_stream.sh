@@ -9,6 +9,6 @@
 # --listen: stream the content to a tcp socket.
 # & disown: run job in background and remove it from the job list of the current shell.
 libcamera-vid -n -t 0 \
-	--width 480 --height 640 \
+	--width 640 --height 640 \
 	--framerate 30 --inline \
 	--listen -o tcp://127.0.0.1:$PORT & disown

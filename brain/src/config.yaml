@@ -12,4 +12,4 @@ object_detector:
   source: tcp://127.0.0.1:8888
   device: cpu
   stream: true
-  verbose: true
+  verbose: false

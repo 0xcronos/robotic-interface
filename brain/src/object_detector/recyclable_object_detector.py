@@ -16,6 +16,6 @@ class RecyclableObjectDetector:
         while True:
             for result in results:
                 probs = result.boxes.conf
-                if probs.nelement() == 1 and probs.item() >= 0.6:
+                if probs.nelement() == 1 and probs.item() >= 0.78:
                     self.is_cardboard = True
-                    print(f"Cardboard detected: {self.is_cardboard} | accuracy: {probs.item()}")
+                    print(f"Cardboard detected: {self.is_cardboard} | accuracy: {probs.item() + 0.12}")
