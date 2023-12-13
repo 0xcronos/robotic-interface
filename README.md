@@ -10,9 +10,8 @@ para la clasificación y detección de materiales reciclables como cartón, pape
 ## Configuración Inicial
 
 ### Requisitos del Sistema
-
-- python 3.11+
-- python3-full
+- python 3.10+
+- pip
 
 ### Configuración del Entorno de Desarrollo
 
