@@ -1,7 +1,20 @@
 # Interfaz Robótica para Automatización de Reciclaje
 
-El proyecto tiene como propósito el desarrollo de un sistema automatizado 
-para la clasificación y detección de materiales reciclables como cartón, papel o plástico.
+El presente proyecto tiene como propósito el desarrollo de un sistema automatizado para la clasificación 
+y detección de materiales reciclables utilizando una red neuronal convolucional y la programación de un 
+brazo robótico para la manipulación y colocación de los materiales en diferentes contenedores. 
+El objetivo principal del proyecto es la clasificación de los materiales en diferentes categorías, 
+como cartón, papel o plástico. 
+
+El sistema se implementará en una banda transportadora, donde los materiales reciclables serán transportados
+para su posterior clasificación. La red neuronal convolucional será entrenada con imágenes de diferentes 
+materiales para que pueda identificar y clasificar los materiales con precisión. El brazo robótico, por su parte,
+estará equipado con actuadores y un sistema de visión para detectar y agarrar los materiales de manera segura y precisa.
+
+Una vez que los materiales sean clasificados, el brazo robótico los colocará en diferentes contenedores, cada uno 
+destinado para un tipo específico de material reciclable. La implementación de este sistema automatizado tiene como
+objetivo reducir la cantidad de residuos que terminan en los vertederos, promoviendo así la gestión sostenible de los
+residuos y la conservación del medio ambiente.
 
 <div align="center">
   <img src="https://i.ibb.co/GP84JZz/20231213-000343.webp" alt="Diagrama de Componentes" width="50%" height="50%">
