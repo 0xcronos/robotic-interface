@@ -47,13 +47,13 @@ para la clasificación y detección de materiales reciclables como cartón, pape
 4. Paso 3: Iniciar el programa.
     ```bash
     # Opción 1: Iniciar desde `runner.sh`.
-    #    Utilizar esta opción si source = tcp://127.0.0.1:8888.
+        Utilizar esta opción si source = tcp://127.0.0.1:8888.
 
     cd robotic-interface/brain/src/
     ./runner.sh
     
     # Opción 2: Inicio manual
-    #    Utilizar esta opción si source = 0 (config para cámaras USB)
+        Utilizar esta opción si source = 0 (config para cámaras USB)
         cd robotic-interface/brain/
         source venv/bin/activate
         cd src/
@@ -66,12 +66,19 @@ El componente principal de la interfaz robótica es el Raspberry pi 4 model b+, 
 en el cual se ejecuta este programa. El Raspberry pi es el encargado de controlar y orquestar el 
 funcionamiento del brazo robótico, el detector de objetos, la banda transportadora y el sensor de proximidad.
 
-![Diagrama de Componentes](https://i.ibb.co/0qhVxth/Arquitectura-general.png)
+<div align="center">
+  <img src="https://i.ibb.co/0qhVxth/Arquitectura-general.png" alt="Diagrama de Componentes" width="705" height="618">
+</div>
+
 
 ## Diagrama de Flujo General
 
-![Diagrama de Flujo](https://i.ibb.co/2yFRsQz/diagrama-flujo.png)
+<div align="center">
+  <img src="https://i.ibb.co/2yFRsQz/diagrama-flujo.png" alt="Diagrama de Componentes" width="705" height="618">
+</div>
 
 ## Diagrama de Clases UML
 
-![Diagrama de Clases UML](https://i.ibb.co/42nkDrb/UML-robotic-interface.png)
+<div align="center">
+  <img src="https://i.ibb.co/42nkDrb/UML-robotic-interface.png" alt="Diagrama de Componentes" width="705" height="618">
+</div>
