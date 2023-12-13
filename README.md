@@ -78,8 +78,9 @@ residuos y la conservación del medio ambiente.
     python3 main.py
     ```
     
-[contributors-shield]: https://img.shields.io/github/contributors/0xCronos/robotic-interface.svg?style=for-the-badge
-[contributors-url]: https://github.com/0xCronos/robotic-interface/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/0xCronos/robotic-interface.svg?style=for-the-badge
-[forks-url]: https://github.com/0xCronos/robotic-interface/network/members
-[stars-shield]: https://img.shields.io/github/stars/0xCronos/robotic-interface.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/0xCronos/SingularityBot.svg?style=for-the-badge
+[contributors-url]: https://github.com/0xCronos/SingularityBot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/0xCronos/SingularityBot.svg?style=for-the-badge
+[forks-url]: https://github.com/0xCronos/SingularityBot/network/members
+[stars-shield]: https://img.shields.io/github/stars/0xCronos/SingularityBot.svg?style=for-the-badge
+[stars-url]: https://github.com/0xCronos/SingularityBot/stargazers
