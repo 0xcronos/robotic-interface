@@ -69,7 +69,7 @@ funcionamiento del brazo robótico, el detector de objetos, la banda transportad
 
 ![Diagrama de Componentes](https://i.ibb.co/0qhVxth/Arquitectura-general.png)
 
-## Diagrama de Flujo
+## Diagrama de Flujo General
 
 ![Diagrama de Flujo](https://i.ibb.co/2yFRsQz/diagrama-flujo.png)
 
