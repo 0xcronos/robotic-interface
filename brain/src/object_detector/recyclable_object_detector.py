@@ -18,4 +18,4 @@ class RecyclableObjectDetector:
                 probs = result.boxes.conf
                 if probs.nelement() == 1 and probs.item() >= 0.78:
                     self.is_cardboard = True
-                    print(f"Cardboard detected: {self.is_cardboard} | accuracy: {probs.item() + 0.12}")
+                    print(f"Cardboard detected: {self.is_cardboard} | accuracy: {probs.item()}")
