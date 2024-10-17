@@ -20,9 +20,6 @@ destinado para un tipo específico de material reciclable. La implementación de
 objetivo reducir la cantidad de residuos que terminan en los vertederos, promoviendo así la gestión sostenible de los
 residuos y la conservación del medio ambiente.
 
-<div align="center">
-  <img src="https://i.ibb.co/GP84JZz/20231213-000343.webp" alt="Diagrama de Componentes" width="50%" height="50%">
-</div>
 
 ## Configuración Inicial
 
